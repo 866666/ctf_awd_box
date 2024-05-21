@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor
 ssh_credentials = [("root", "123456"), ("kali", "kali"), ("kali", "shangjin")]
 
 # IP和端口列表，假设每行是一个IP:Port
-with open("host_list.txt", "r") as file:
+with open("ip_list.txt", "r") as file:
     host_ports = file.read().splitlines()
 
 # 使用线程池
